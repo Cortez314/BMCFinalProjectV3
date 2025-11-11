@@ -117,7 +117,7 @@ class _AdminPanelScreenState extends State<AdminPanelScreen> {
                     TextFormField(
                       controller: _imageUrlController,
                       decoration: const InputDecoration(
-                        labelText: 'Organic Image URL',
+                        labelText: 'Product Image URL',
                         border: OutlineInputBorder(),
                       ),
                       keyboardType: TextInputType.url,
@@ -136,7 +136,7 @@ class _AdminPanelScreenState extends State<AdminPanelScreen> {
                     TextFormField(
                       controller: _nameController,
                       decoration: const InputDecoration(
-                        labelText: 'Organic Product Name',
+                        labelText: 'Product Name',
                         border: OutlineInputBorder(),
                       ),
                       validator: (value) =>
@@ -147,7 +147,7 @@ class _AdminPanelScreenState extends State<AdminPanelScreen> {
                     TextFormField(
                       controller: _descriptionController,
                       decoration: const InputDecoration(
-                        labelText: 'Organic Description',
+                        labelText: 'Product Description',
                         border: OutlineInputBorder(),
                       ),
                       maxLines: 3,
@@ -159,7 +159,7 @@ class _AdminPanelScreenState extends State<AdminPanelScreen> {
                     TextFormField(
                       controller: _priceController,
                       decoration: const InputDecoration(
-                        labelText: 'Organic Price',
+                        labelText: 'Product Price',
                         border: OutlineInputBorder(),
                       ),
                       keyboardType: TextInputType.number,
@@ -185,7 +185,7 @@ class _AdminPanelScreenState extends State<AdminPanelScreen> {
                         onPressed: _isLoading ? null : _uploadProduct,
                         child: _isLoading
                             ? const CircularProgressIndicator(color: Colors.white)
-                            : const Text('Upload Organic Product', style: TextStyle(color: Colors.white)),
+                            : const Text('Upload Product', style: TextStyle(color: Colors.white)),
                       ),
                     ),
                   ],
